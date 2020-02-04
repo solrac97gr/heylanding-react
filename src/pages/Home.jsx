@@ -3,7 +3,6 @@ import { Hero } from "../components/Hero";
 import { How } from "../components/How";
 import { WebApp } from "../components/WebApp";
 import { Apply } from "../components/Apply";
-import {Footter} from '../components/Footer'
 import { Helmet } from "react-helmet";
 
 export const Home = () => {
@@ -21,7 +20,6 @@ export const Home = () => {
       <How/>
       <WebApp/>
       <Apply/>
-      <Footter/>
     </>
   );
 };

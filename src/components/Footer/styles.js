@@ -55,10 +55,13 @@ export const ContactFooter = styled.div`
 export const FooterDerechos = styled.div`
     border-top: 1px solid gainsboro;
     padding-top:1em ;
-    padding-bottom: 0.1em;
+    padding-bottom:1em ;
     color:#7e7e7e;
     text-align: left;
     padding-left: 18%;
+    @media (max-width: 600px) {
+      padding-left: 8%;
+  }
 `
 export const IconLinkFooter = styled.div`
 margin-top: 13px;

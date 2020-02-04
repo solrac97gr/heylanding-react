@@ -7,7 +7,7 @@ export const How = () => {
       <SectionTitle>¿Como Funciona?</SectionTitle>
       <StageContainer>
         <Stage>
-          <StageTitle>Regístrate en nuestra web.</StageTitle>
+          <StageTitle>Regístrate.</StageTitle>
           <StageInfo>Regístrate en nuestra web para poder contactar a cientos de técnicos.</StageInfo>
           <AddReqStyled />
         </Stage>

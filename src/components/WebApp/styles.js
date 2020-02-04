@@ -16,7 +16,8 @@ box-shadow:0px 2px 4px rgba(0,0,0,0.5);
 border-radius:20px;
 @media (max-width: 500px) {
   margin-top:20px;
-  width:75%;
+  width:100%;
+  
 }
 `
 export const ImgContainer = styled.div`
@@ -25,6 +26,7 @@ display:flex;
 justify-content:center;
 @media (max-width: 500px) {
   width:100%;
+  display:none;
 }
 `
 export const TextContainer = styled.div`

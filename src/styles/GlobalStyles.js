@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background-color:white;
     overscroll-behavior: none;
-    padding-bottom:50px;
+   
   }
 
   ul, li, h1, h2, h3, p, button { margin: 0; padding: 0; }

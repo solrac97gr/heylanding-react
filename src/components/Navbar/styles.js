@@ -16,7 +16,7 @@ width:100%;
 @media (max-width: 500px) {
   display:flex;
   flex-direction:column;
-  padding:20px 10px;
+  padding:8px 0px;
 }
 `
 export const Link = styled(LinkRouter)`
@@ -26,12 +26,12 @@ text-decoration:none;
 margin:0px 8px;
 padding:5px 0px;
 &[aria-current="page"]{
-    color:#B35B03;
+    color:#c43e00;
     border-bottom:3px solid #B35B03;
     ${fadeIn({time:"0.3s"})};
 }
 @media (max-width: 500px) {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 `
 export const ButtonCTA  = styled(LinkRouter)`
@@ -44,7 +44,7 @@ margin:0px 5px;
 box-shadow:1.5px 1px 1px rgba(0,0,0,0.2);
 font-weight:500;
 &:hover{
-    background-color:#B35B03;
+    background-color:#c43e00;
 }
 @media (max-width: 500px) {
   display:none;

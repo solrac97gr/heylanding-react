@@ -16,7 +16,7 @@ export const FunStyled = styled(Fun)`
 export const PricesStyled = styled(Prices)`
   width: 65px;
   margin: auto;
-  padding-top:10px;
+  padding-top:15px;
 `;
 
 export const StageContainer = styled.div`
@@ -35,17 +35,17 @@ export const HowContainer = styled.div`
   text-align: center;
   align-items: center;
   padding: 5% 20%;
-  background-color: #ff9021;
+  background-color: #c43e00;
   @media (max-width: 500px) {
     padding: 5% 20px;
   }
 `;
 export const SectionTitle = styled.h2`
   font-size: 2em;
-  color: white;
+  color:white;
 `;
 export const Stage = styled.div`
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,9 +58,9 @@ export const Stage = styled.div`
 export const StageTitle = styled.span`
   font-size: 1.5em;
   font-weight: 600;
-  color: black;
+  color: white;
   margin: 10px 0px;
 `;
 export const StageInfo = styled.span`
-  color: white;
+  color: Black;
 `;
