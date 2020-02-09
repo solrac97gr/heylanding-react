@@ -29,6 +29,7 @@ export const Benefit = styled.li`
 `;
 export const Centered = styled.div`
   display: flex;
+  flex-direction:column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -59,3 +60,9 @@ export const ApplyTitle = styled.h2`
   margin: 10px;
   font-size:2em;
 `;
+export const ApplyContent = styled.span`
+  margin: 10px;
+`;
+export const Img = styled.img`
+width: 200px;
+`

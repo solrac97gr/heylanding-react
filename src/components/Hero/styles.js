@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   @media (max-width: 500px) {
-    padding-top:50%;
+    padding-top:35%;
     padding-bottom:20%;
     padding-left:20px;
     padding-right:20px;
@@ -62,7 +62,7 @@ export const MktTitle = styled.span`
 
 export const ButtonCTA = styled.a`
   color: white;
-  width: 40%;
+  width:60%;
   text-align: center;
   text-decoration: none;
   background-color: #fe8307;

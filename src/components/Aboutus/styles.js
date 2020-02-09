@@ -15,8 +15,8 @@ export const AboutUsTitle = styled.h2`
   margin: 2% 0px;
 `;
 export const AboutUsContent = styled.span`
-  font-size: 1em;
-  color: #7e7e7e;
+  font-size: 1.3em;
+  color: black;
   margin: 2% 0px;
   text-align:justify;
 `;
@@ -25,7 +25,13 @@ display:flex;
 flex-direction:column;
 `
 export const Objetive = styled.span`
-font-size: 1em;
-  color: #fe8307;
+  font-size: 1.2em;
+  background-color: #fe8307;
+  color:white;
   margin: 1% 0px;
+  font-weight:600;
+  box-shadow:0px 1px 2px rgba(0,0,0,0.3);
+  margin:10px 0px;
+  padding:13px;
+  border-radius:6px;
 `

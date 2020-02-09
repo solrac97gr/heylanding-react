@@ -34,7 +34,7 @@ export const HowContainer = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 5% 20%;
+  padding: 5% 18%;
   background-color: #c43e00;
   @media (max-width: 500px) {
     padding: 5% 20px;
@@ -42,7 +42,7 @@ export const HowContainer = styled.div`
 `;
 export const SectionTitle = styled.h2`
   font-size: 2em;
-  color:white;
+  color:rgba(0,0,0,0.5);
 `;
 export const Stage = styled.div`
   width: 30%;
@@ -50,6 +50,7 @@ export const Stage = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items:center; 
   padding: 10px;
   @media (max-width: 500px) {
     width: 100%;
@@ -62,5 +63,9 @@ export const StageTitle = styled.span`
   margin: 10px 0px;
 `;
 export const StageInfo = styled.span`
-  color: Black;
+  color: #e7e7e7;
 `;
+export const Img = styled.img`
+padding:20px;
+width:250px;
+`
