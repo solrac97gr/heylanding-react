@@ -15,7 +15,7 @@ export const Hero = () => {
   return (
     <HeroContainer>
       <TextContainer>
-        <MktTitle>Lo que necesites arreglar lo haremos por ti.</MktTitle>
+        <MktTitle>Reparar nunca fue tan fácil.</MktTitle>
         <SeoTitle>Servicio técnico a domicilio en Lima</SeoTitle>
         <ButtonCTA href="https://api.whatsapp.com/send?phone=51927459387&text=Hola!%20Mi%20requerimiento%20es">Contactar un técnico </ButtonCTA>
       </TextContainer>
