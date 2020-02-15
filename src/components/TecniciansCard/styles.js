@@ -6,9 +6,15 @@ box-shadow:0px 1px 3px rgba(0,0,0,0.3);
 margin:10px;
 border-radius:6px;
 color:white;
+@media (max-width: 500px) {
+    width: 100%;
+    margin:10px 0px;
+}
 `
 export const TecniciansCardHeader = styled.div`
-background-color:#FE8307;
+background: #FDC830;  
+background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
+background: linear-gradient(to right, #F37335, #FDC830); 
 padding:40px 10px;
 border-radius:6px 6px 18px 0px;
 margin-bottom:15px;

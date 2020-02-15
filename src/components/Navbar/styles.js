@@ -18,6 +18,8 @@ export const Nav = styled.nav`
     flex-direction: row;
     justify-content: center;
     padding: 2px 5px;
+    position: fixed;
+    top:0;
   }
 `;
 export const Link = styled(LinkRouter)`
@@ -68,7 +70,7 @@ export const NavElementsMovil = styled.div`
     flex-direction:column;
     position:fixed;
     bottom: 10%;
-    left:3%;
+    right:3%;
     background-color:white;
     padding:13px;
     border-radius:6px;

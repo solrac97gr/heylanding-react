@@ -9,6 +9,9 @@ background-color:#FE8307;
 text-align:left;
 align-content:center;
 vertical-align:middle;
+@media (max-width: 500px) {
+  display:none;
+}
 `
 export const MktTitle = styled.span`
 display:flex;

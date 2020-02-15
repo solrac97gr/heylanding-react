@@ -5,7 +5,7 @@ import {MdSearch} from "react-icons/md";
 export const SearchBar = () => {
     return (
         <SearchBarContainer>
-            <Input type="text" name="" id="" placeholder="Busca tu técnico"/>
+            <Input type="text" name="" id="" placeholder="Busca tu técnico/a"/>
             <Button><MdSearch size={25}/></Button>
         </SearchBarContainer>
     )

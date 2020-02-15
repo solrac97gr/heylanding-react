@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -14,8 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     overscroll-behavior: none;
    
   }
-
+  textarea:focus, input:focus{
+    outline: none;
+}
   ul, li, h1, h2, h3, p, button { margin: 0; padding: 0; }
   ul { list-style: none; }
   button { background: transparent; border: 0; outline: 0 }
-`
+`;

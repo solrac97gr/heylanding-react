@@ -4,6 +4,8 @@ import { How } from "../components/How";
 import { WebApp } from "../components/WebApp";
 import { Apply } from "../components/Apply";
 import { Helmet } from "react-helmet";
+import {Footter} from '../components/Footer'
+import {NavBar} from '../components/Navbar'
 
 export const Home = () => {
   return (
@@ -16,10 +18,12 @@ export const Home = () => {
           content="Técnicos a domicilio en lima para todos los rubros."
         />
       </Helmet>
+      <NavBar/>
       <Hero />
       <How/>
       <WebApp/>
       <Apply/>
+      <Footter/>
     </>
   );
 };

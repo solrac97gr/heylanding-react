@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import { NavBar } from "../components/Navbar";
+import { RegisterForm } from "../components/RegisterForm";
 
 export const Register = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <>
+      <NavBar />
+      <RegisterForm />
+    </>
+  );
+};

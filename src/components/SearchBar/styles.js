@@ -11,10 +11,19 @@ export const SearchBarContainer = styled.div`
   margin-top: -20px;
   margin-bottom: 20px;
   border-radius: 6px;
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-top: 23%;
+    margin-bottom:0;
+    position:fixed;
+    bottom:0;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+  }
 `;
 export const Input = styled.input`
   width: 70%;
-  font-size:.8em;
+  font-size: 0.8em;
   padding: 4% 1%;
   margin: 3px;
   border: none;
@@ -24,11 +33,14 @@ export const Input = styled.input`
   }
 `;
 export const Button = styled.button`
-text-align:center;
-color:white;
-font-weight:600;
+  text-align: center;
+  color: white;
+  font-weight: 600;
   width: 20%;
   padding: 10px;
-  background-color: #B35B03;
+  background-color: #b35b03;
   border-radius: 0px 6px 6px 0px;
+  @media (max-width: 500px) {
+    border-radius:0;
+  }
 `;

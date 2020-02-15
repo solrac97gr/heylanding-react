@@ -4,8 +4,7 @@ import router from './router/index'
 /* Styles */
 import { GlobalStyle } from "./styles/GlobalStyles";
 /* Components */
-import {NavBar} from './components/Navbar'
-import {Footter} from './components/Footer'
+
 /* Pages */
 import { Home } from "./pages/Home";
 import {Aboutus} from './pages/Aboutus'
@@ -17,7 +16,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <NavBar/>
+     
       <Router>
         <Home path={router.home} />
         <Aboutus path={router.aboutus}/>
@@ -25,7 +24,7 @@ function App() {
         <Login path={router.singin} />
         <Register path={router.singup}/>
       </Router>
-      <Footter/>
+     
     </>
   );
 }

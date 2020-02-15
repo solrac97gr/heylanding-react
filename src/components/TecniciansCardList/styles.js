@@ -10,4 +10,11 @@ export const TecniciansCardListContainer = styled.div`
   & > * {
     flex: 1 1 220px 220px;
   }
+  @media (max-width: 500px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 23% 5%;
+}
 `;
