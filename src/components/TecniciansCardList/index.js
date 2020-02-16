@@ -34,7 +34,7 @@ export const TecniciansCardList = (query) => {
         setData(data);
         setLoading(false);
       });
-  });
+  },[]);
 
   return (
     <TecniciansCardListContainer>

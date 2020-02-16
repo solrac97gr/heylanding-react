@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {navigate} from "@reach/router"
 import { useInput } from "../../hooks/useInput";
 import heroimage from "../../static/images/gente_reparando.png";
+import {ErrorBanner} from "../ErrorBanner"
 
 import {
   Form,
@@ -17,10 +18,9 @@ import {
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
 export const RegisterForm = () => {
-  const Email = useInput();
-  const Password = useInput();
-  const ConfirmPassword = useInput();
-  const [token, setToken] = useState("");
+  const Email = useInput("");
+  const Password = useInput("");
+  const ConfirmPassword = useInput("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -37,8 +37,7 @@ export const RegisterForm = () => {
           return response.json();
         })
         .then(function(data) {
-          setToken(data);
-          window.localStorage.setItem("token", token);
+          window.localStorage.setItem("token", data);
           setLoading(false);
           navigate("/tecnicos")
         });
@@ -90,7 +89,7 @@ export const RegisterForm = () => {
           </SocialButtons>
           <Button>Registrarme</Button>
           {
-           error.length>0?"Contraseñas deben coincidir":"no hay error jeje"
+           error.length>0?<ErrorBanner error={error}/>:<></>
           }
         </Form>
       )}
