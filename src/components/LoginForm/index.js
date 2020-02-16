@@ -1,6 +1,6 @@
-import React from "react";
+import React,{useState} from "react";
 import { useInput } from "../../hooks/useInput";
-import heroimage from "../../static/images/gente_reparando.png"
+import heroimage from "../../static/images/gente_reparando.png";
 
 import {
   Form,
@@ -16,12 +16,30 @@ import {
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
 export const LoginForm = () => {
-  const Email = useInput();
-  const Password = useInput();
+  const Email = useInput("");
+  const Password = useInput("");
   const size = 13;
+  const [token,setToken] = useState("")
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    if (true) {
+      fetch(
+        `https://us-central1-hey-solve.cloudfunctions.net/CreateUser?email=${Email.value}&password=${Password.value}`
+      )
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          setToken(data)
+          window.localStorage.setItem("token",token)
+        });
+    }
+  };
+
   return (
     <FormContainer>
-      <Form>
+      <Form onSubmit={HandleSubmit}>
         <FormTitle>Iniciar Sesión</FormTitle>
         <InputGuide>Ingresa tu email</InputGuide>
         <Input
@@ -51,7 +69,7 @@ export const LoginForm = () => {
         <Button>Iniciar Sesión</Button>
       </Form>
       <ImgContainer>
-          <Img src={heroimage} alt=""/>
+        <Img src={heroimage} alt="" />
       </ImgContainer>
     </FormContainer>
   );

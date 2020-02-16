@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TecniciansCard } from "../TecniciansCard";
+import { TecnicCardLoader } from "../TecnicCardLoader";
 import { TecniciansCardListContainer } from "./styles";
 
 const datatest = [
@@ -22,6 +23,8 @@ const datatest = [
 
 export const TecniciansCardList = (query) => {
   const [data, setData] = useState(datatest);
+  const [loading, setLoading] = useState(true);
+
   useEffect(function() {
     fetch("https://us-central1-hey-solve.cloudfunctions.net/GetTechnicians")
       .then(function(response) {
@@ -29,14 +32,15 @@ export const TecniciansCardList = (query) => {
       })
       .then(function(data) {
         setData(data);
+        setLoading(false);
       });
   });
 
   return (
     <TecniciansCardListContainer>
-      {data.map((n) => (
-        <TecniciansCard key={n} name={n.Nombre} />
-      ))}
+      {loading
+        ? [1, 2, 3, 4, 5,6,7,8,9].map((n) => <TecnicCardLoader key={n}/>)
+        : data.map((user) => <TecniciansCard  name={user.Nombre} />)}
     </TecniciansCardListContainer>
   );
 };

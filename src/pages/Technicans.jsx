@@ -8,7 +8,7 @@ import { NavBar } from "../components/Navbar";
 import { MobileTopBanner } from "../components/MobileTopBanner";
 
 export const Technicans = () => {
-  const isMobile = useIsInQuery("(max-width: 500px)", true);
+  const isMobile = useIsInQuery("(max-width: 500px)", false);
 
   return (
     <div>
