@@ -5,16 +5,30 @@ import {
   ButtonCTA,
   Logo,
   NavElements,
-  NavElementsMovil
+  NavElementsMovil,
+  Img,
+  Button
 } from "./styles";
 import router from "../../router";
 import "./hamb.css";
 
 export const NavBar = () => {
+  const [photo] = useState(function() {
+    if (window.localStorage.getItem("photo")) {
+      return window.localStorage.getItem("photo");
+    } else {
+      return "";
+    }
+  });
   const [ShowhmabMenu, SetShowHambMenu] = useState(false);
   const HandleClick = () => {
     document.getElementById("hamb").classList.toggle("active");
     SetShowHambMenu(!ShowhmabMenu);
+  };
+  const HandleLogout = () => {
+    window.localStorage.removeItem("token");
+    window.localStorage.removeItem("photo");
+    window.location.reload();
   };
   return (
     <Nav>
@@ -42,14 +56,32 @@ export const NavBar = () => {
         <Link to={router.home}>Inicio</Link>
         <Link to={router.aboutus}>Nosotros</Link>
         <Link to={router.tech}>Técnicos</Link>
-        <ButtonCTA to={router.singup}>Registrarme</ButtonCTA>
+        {window.localStorage.getItem("token") ? (
+          <Button onClick={HandleLogout}>Cerrar Sesión</Button>
+        ) : (
+          <></>
+        )}
+        {window.localStorage.getItem("photo") ? (
+          <Img src={photo} alt="" />
+        ) : (
+          <ButtonCTA to={router.singup}>Registrarme</ButtonCTA>
+        )}
       </NavElements>
       {ShowhmabMenu && (
         <NavElementsMovil>
           <Link to={router.home}>Inicio</Link>
           <Link to={router.aboutus}>Nosotros</Link>
           <Link to={router.tech}>Técnicos</Link>
-          <Link to={router.singup}>Registrarme</Link>
+          {window.localStorage.getItem("token") ? (
+            <Button onClick={HandleLogout}>Cerrar Sesión</Button>
+          ) : (
+            <></>
+          )}
+          {window.localStorage.getItem("token") ? (
+            <></>
+          ) : (
+            <Link to={router.singup}>Registrarme</Link>
+          )}
         </NavElementsMovil>
       )}
     </Nav>

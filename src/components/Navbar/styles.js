@@ -78,3 +78,23 @@ export const NavElementsMovil = styled.div`
     ${scaleU({time:"0.4s"})};
   }
 `;
+export const Img = styled.img`
+width:20px;
+border-radius:50%;
+
+`
+export const Button = styled.button`
+  color: #7e7e7e;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 8px;
+  padding: 5px 0px;
+  &[aria-current="page"] {
+    color: #c43e00;
+    border-bottom: 3px solid #c43e00;
+    ${fadeIn({ time: "0.3s" })};
+  }
+  @media (max-width: 500px) {
+    font-size: 1.1rem;
+  }
+`;
