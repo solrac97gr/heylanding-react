@@ -33,3 +33,10 @@ export const ArrowBack = styled(MdArrowBack)`
   top:8;
   left:0;
 `;
+
+export const Img = styled.img`
+width:40px;
+border-radius:50%;
+position:relative;
+left:50px;
+`

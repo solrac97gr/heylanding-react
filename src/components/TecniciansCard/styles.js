@@ -41,3 +41,7 @@ export const ColumnText = styled.div`
 display:flex;
 flex-direction:column;
 `
+export const Link = styled.a`
+text-decoration:none;
+color:inherit;
+`

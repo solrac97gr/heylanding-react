@@ -1,6 +1,7 @@
 /* tslint:disable */
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
+
 const cors = require("cors")({ origin: true });
 
 admin.initializeApp(functions.config().firebase);

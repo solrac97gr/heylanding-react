@@ -1,13 +1,20 @@
 import React, { useState } from "react";
-import { Link, Nav, ButtonCTA, Logo,NavElements,NavElementsMovil } from "./styles";
+import {
+  Link,
+  Nav,
+  ButtonCTA,
+  Logo,
+  NavElements,
+  NavElementsMovil
+} from "./styles";
 import router from "../../router";
 import "./hamb.css";
 
 export const NavBar = () => {
-  const [ShowhmabMenu,SetShowHambMenu]=useState(false);
+  const [ShowhmabMenu, SetShowHambMenu] = useState(false);
   const HandleClick = () => {
     document.getElementById("hamb").classList.toggle("active");
-    SetShowHambMenu(!ShowhmabMenu)
+    SetShowHambMenu(!ShowhmabMenu);
   };
   return (
     <Nav>
@@ -35,16 +42,16 @@ export const NavBar = () => {
         <Link to={router.home}>Inicio</Link>
         <Link to={router.aboutus}>Nosotros</Link>
         <Link to={router.tech}>Técnicos</Link>
-        <Link to={router.singin}>Iniciar sesión</Link>
         <ButtonCTA to={router.singup}>Registrarme</ButtonCTA>
-      </NavElements>{ShowhmabMenu &&
-      <NavElementsMovil>
-        <Link to={router.home}>Inicio</Link>
-        <Link to={router.aboutus}>Nosotros</Link>
-        <Link to={router.tech}>Técnicos</Link>
-        <Link to={router.singin}>Iniciar sesión</Link>
-        <Link to={router.singup}>Registrarme</Link>
-      </NavElementsMovil>}
+      </NavElements>
+      {ShowhmabMenu && (
+        <NavElementsMovil>
+          <Link to={router.home}>Inicio</Link>
+          <Link to={router.aboutus}>Nosotros</Link>
+          <Link to={router.tech}>Técnicos</Link>
+          <Link to={router.singup}>Registrarme</Link>
+        </NavElementsMovil>
+      )}
     </Nav>
   );
 };

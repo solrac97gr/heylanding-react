@@ -6,7 +6,8 @@ import {
   Button,
   TecniciansCardHeader,
   ButtonContainer,
-  ColumnText
+  ColumnText,
+  Link
 } from "./styles";
 
 export const TecniciansCard = ({ name = "Nombre Apellido", qualify = 4 }) => {
@@ -25,8 +26,8 @@ export const TecniciansCard = ({ name = "Nombre Apellido", qualify = 4 }) => {
       </TecniciansCardHeader>
 
       <ButtonContainer>
-        <Button primary>Contactar</Button>
-        <Button>Ver Perfil</Button>
+        <Button primary><Link href="https://api.whatsapp.com/send?phone=51927459387&text=Hola!%20Mi%20requerimiento%20es">Contactar</Link></Button>
+        <Button disabled>Ver Perfil</Button>
       </ButtonContainer>
     </TecniciansCardStyled>
   );

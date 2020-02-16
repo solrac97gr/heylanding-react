@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import {navigate} from "@reach/router"
+import { navigate } from "@reach/router";
 import { useInput } from "../../hooks/useInput";
 import heroimage from "../../static/images/gente_reparando.png";
-import {ErrorBanner} from "../ErrorBanner"
+import { ErrorBanner } from "../ErrorBanner";
+import firebase from "firebase/app";
+
+import "firebase/auth";
 
 import {
   Form,
@@ -24,11 +27,38 @@ export const RegisterForm = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const LoginWithGoogle = () => {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then(function(result) {
+        window.localStorage.setItem("token", result.credential.accessToken);
+        window.localStorage.setItem("photo", result.user.photoURL);
+        navigate("/tecnicos");
+      })
+      .catch(function(error) {
+        setError(error.message);
+      });
+  };
+  const LoginWithFacebook = () => {
+    var provider = new firebase.auth.FacebookAuthProvider();
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then(function(result) {
+        window.localStorage.setItem("token", result.credential.accessToken);
+        window.localStorage.setItem("photo", result.user.photoURL);
+        navigate("/tecnicos");
+      })
+      .catch(function(error) {
+        setError(error.message);
+      });
+  };
+
   const HandleSubmit = (e) => {
     e.preventDefault();
-
     if (Password.value === ConfirmPassword.value) {
-
       setLoading(true);
       fetch(
         `https://us-central1-hey-solve.cloudfunctions.net/CreateUser?email=${Email.value}&password=${Password.value}`
@@ -38,11 +68,16 @@ export const RegisterForm = () => {
         })
         .then(function(data) {
           window.localStorage.setItem("token", data);
+          window.localStorage.setItem(
+            "photo",
+            "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+          );
+
           setLoading(false);
-          navigate("/tecnicos")
+          navigate("/tecnicos");
         });
-    }else{
-      setError("Las contraseñas deben coincidir")
+    } else {
+      setError("Las contraseñas deben coincidir");
     }
   };
 
@@ -79,18 +114,16 @@ export const RegisterForm = () => {
             value={ConfirmPassword.value}
           />
           <SocialButtons>
-            <Button social facebook>
+            <Button social facebook onClick={LoginWithFacebook}>
               <FaFacebookF size={size} /> Facebook
             </Button>
-            <Button social google>
+            <Button social google onClick={LoginWithGoogle}>
               <FaGoogle size={size} color="#D50000" />
               Google
             </Button>
           </SocialButtons>
           <Button>Registrarme</Button>
-          {
-           error.length>0?<ErrorBanner error={error}/>:<></>
-          }
+          {error.length > 0 ? <ErrorBanner error={error} /> : <></>}
         </Form>
       )}
 
