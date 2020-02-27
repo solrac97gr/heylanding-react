@@ -27,12 +27,12 @@ export const TeamCardImage = styled.img`
 `;
 export const TeamTitle = styled.h2`
   font-size: 2em;
-  color: #fe8307;
+  color: #7b1fa2;
   margin: 5% 0px;
 `;
 export const TeamCardTitle = styled.h3`
   font-size: 0.9em;
-  color: #b35b03;
+  color: #7b1fa2;
   margin-top: 5px;
   font-weight: 500;
 `;

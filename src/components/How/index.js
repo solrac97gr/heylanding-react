@@ -15,7 +15,7 @@ export const How = () => {
           <Img src={register} alt=""/>
         </Stage>
         <Stage>
-          <StageTitle>Elíge tu técnico.</StageTitle>
+          <StageTitle>Solicita tu técnico.</StageTitle>
           <StageInfo>Contacta con el técnico que mejor se adecue a tu proyecto y presupuesto.</StageInfo>
           <Img src={search} alt=""/>
         </Stage>

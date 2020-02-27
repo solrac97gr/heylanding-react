@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Logo, ArrowBack,Img } from "./styles";
+import { Nav, LogoFont, ArrowBack,Img } from "./styles";
 
 export const MobileTopBanner = () => {
   const [photo] = useState(function() {
@@ -16,8 +16,8 @@ export const MobileTopBanner = () => {
 
   return (
     <Nav>
-      <ArrowBack size={31} color="#FE8307" onClick={handleClick} />
-      <Logo />
+      <ArrowBack size={31} color="#7b1fa2" onClick={handleClick} />
+      <LogoFont to="/">yendo!</LogoFont>
       <Img src={photo} alt="" />
     </Nav>
   );

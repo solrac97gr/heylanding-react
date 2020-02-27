@@ -38,7 +38,7 @@ export const Button = styled.button`
   font-weight: 600;
   width: 20%;
   padding: 10px;
-  background-color: #b35b03;
+  background-color: #4267b2;
   border-radius: 0px 6px 6px 0px;
   @media (max-width: 500px) {
     border-radius:0;

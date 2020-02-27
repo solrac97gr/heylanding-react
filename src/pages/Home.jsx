@@ -12,11 +12,13 @@ export const Home = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>HeySolve! | Técnicos a domicilio</title>
+        <title>Yendo! | Técnicos a domicilio</title>
         <meta
           name="description"
           content="Técnicos a domicilio en lima para todos los rubros."
         />
+        <link rel="canonical" href="https://yendo.pe" />
+      
       </Helmet>
       <NavBar/>
       <Hero />

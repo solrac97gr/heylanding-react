@@ -24,13 +24,13 @@ export const FormContainer = styled.div`
 export const Input = styled.input`
   margin: 8px 5px;
   padding:13px 3px;
-  border:1px solid  #fe8307;
+  border:1px solid  #7b1fa2;
   border-radius:6px;
 
 `;
 
 export const Button = styled.button`
-  background-color: #fe8307;
+  background-color: #7b1fa2;
   color: white;
   font-size:13px;
   padding: 13px;
@@ -60,11 +60,11 @@ export const Button = styled.button`
         color: #606060;
         width: 50%;
         margin: 8px 5px;
-        border: 1px solid #fe8307;
+        border: 1px solid #7b1fa2;
       `}
 `;
 export const FormTitle = styled.h2`
-color: #fe8307;
+color: #7b1fa2;
 margin:8px 5px;
 `;
 export const SocialButtons = styled.div`

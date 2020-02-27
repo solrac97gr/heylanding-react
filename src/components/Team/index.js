@@ -133,7 +133,7 @@ export const Team = () => {
             src="https://media-exp1.licdn.com/dms/image/C4E03AQHDHLtH1NymtA/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=oo506bD13tmNYDnOlGVBwF3hGOJoD8nZn1TNb7yUjtM"
             alt=""
           />
-          <TeamCardTitle>Heidi Francesska Camus Puente</TeamCardTitle>
+          <TeamCardTitle>Heidi Francesska Europa Camus Puente</TeamCardTitle>
           <TeamCardCharge>Chief Comunication Officer</TeamCardCharge>
           <SocialContainer>
             <a href="https://www.facebook.com/heysolvepe">

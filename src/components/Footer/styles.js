@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
   padding: 10% 10% 10% 10%;
   text-align: left;
   background-color: white;
-  color: #fe8307;
+  color: #7b1fa2;
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row;

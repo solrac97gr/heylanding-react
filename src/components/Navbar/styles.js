@@ -29,8 +29,8 @@ export const Link = styled(LinkRouter)`
   margin: 0px 8px;
   padding: 5px 0px;
   &[aria-current="page"] {
-    color: #c43e00;
-    border-bottom: 3px solid #c43e00;
+    color: #7b1fa2;
+    border-bottom: 3px solid #7b1fa2;
     ${fadeIn({ time: "0.3s" })};
   }
   @media (max-width: 500px) {
@@ -40,14 +40,14 @@ export const Link = styled(LinkRouter)`
 export const ButtonCTA = styled(LinkRouter)`
   color: white;
   text-decoration: none;
-  background-color: #fe8307;
+  background-color: #7b1fa2;
   padding: 13px;
   border-radius: 25px;
   margin: 0px 5px;
   box-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.2);
   font-weight: 500;
   &:hover {
-    background-color: #c43e00;
+    background-color: #681A8A;
   }
   @media (max-width: 500px) {
     display: none;
@@ -55,8 +55,8 @@ export const ButtonCTA = styled(LinkRouter)`
 `;
 export const Logo = styled(LogoHorizontal)`
   margin: 0px;
-  padding: 0px;
-  width: 200px;
+  padding: 10px;
+  width: 150px;
 `;
 
 export const NavElements = styled.div`
@@ -86,15 +86,25 @@ border-radius:50%;
 export const Button = styled.button`
   color: #7e7e7e;
   font-weight: 500;
+  font-size:15px;
   text-decoration: none;
   margin: 0px 8px;
   padding: 5px 0px;
   &[aria-current="page"] {
-    color: #c43e00;
-    border-bottom: 3px solid #c43e00;
+    color: #7b1fa2;
+    border-bottom: 3px solid #7b1fa2;
     ${fadeIn({ time: "0.3s" })};
   }
   @media (max-width: 500px) {
     font-size: 1.1rem;
   }
 `;
+
+
+export const LogoFont = styled(LinkRouter)`
+font-family:'Pacifico';
+font-size:34px;
+padding:10px;
+color:#7b1fa2;
+text-decoration:none;
+`

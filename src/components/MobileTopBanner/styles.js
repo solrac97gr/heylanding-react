@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import LogoHorizontal from "../LogoHorizontal";
 import { MdArrowBack } from "react-icons/md";
+import {Link as LinkRouter} from '@reach/router'
 
 
 export const Nav = styled.nav`
@@ -39,4 +40,11 @@ width:40px;
 border-radius:50%;
 position:relative;
 left:50px;
+`
+export const LogoFont = styled(LinkRouter)`
+font-family:'Pacifico';
+font-size:34px;
+padding:10px;
+color:#7b1fa2;
+text-decoration:none;
 `

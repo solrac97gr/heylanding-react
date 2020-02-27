@@ -22,9 +22,9 @@ export const WebApp = () => {
           a tí o que ya este recomendado por algun conocído tuyo.
         </Description>
         <StageContainer>
-          <Stage>» Selecciona tu ubicación.</Stage>
-          <Stage>» Escoge la especialidad.</Stage>
-          <Stage>» Contácta tu técnico.</Stage>
+          <Stage>Selecciona tu ubicación.</Stage>
+          <Stage>Escoge la especialidad.</Stage>
+          <Stage>Contácta tu técnico.</Stage>
         </StageContainer>
         <ButtonCTA>Regístrate</ButtonCTA>
       </TextContainer>

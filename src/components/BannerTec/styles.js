@@ -5,7 +5,7 @@ display:flex;
 flex-direction:row;
 padding:10% 18% 0% 18%;
 justify-content:space-between;
-background-color:#FE8307;
+background-color:#7b1fa2;
 text-align:left;
 align-content:center;
 vertical-align:middle;

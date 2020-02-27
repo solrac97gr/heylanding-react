@@ -40,7 +40,7 @@ export const TecniciansCardList = (query) => {
     <TecniciansCardListContainer>
       {loading
         ? [1, 2, 3, 4, 5,6,7,8,9].map((n) => <TecnicCardLoader key={n}/>)
-        : data.map((user) => <TecniciansCard  name={user.Nombre} />)}
+        : data.map((user) => <TecniciansCard  name={user.Nombre} skills={user.Especialidad} />)}
     </TecniciansCardListContainer>
   );
 };

@@ -3,11 +3,11 @@ import {
   Link,
   Nav,
   ButtonCTA,
-  Logo,
   NavElements,
   NavElementsMovil,
   Img,
-  Button
+  Button,
+  Logo
 } from "./styles";
 import router from "../../router";
 import "./hamb.css";
@@ -32,7 +32,7 @@ export const NavBar = () => {
   };
   return (
     <Nav>
-      <Logo />
+      <Logo></Logo>
       <div>
         <svg
           id="hamb"
@@ -55,7 +55,7 @@ export const NavBar = () => {
       <NavElements>
         <Link to={router.home}>Inicio</Link>
         <Link to={router.aboutus}>Nosotros</Link>
-        <Link to={router.tech}>Técnicos</Link>
+        
         {window.localStorage.getItem("token") ? (
           <Button onClick={HandleLogout}>Cerrar Sesión</Button>
         ) : (
@@ -71,7 +71,7 @@ export const NavBar = () => {
         <NavElementsMovil>
           <Link to={router.home}>Inicio</Link>
           <Link to={router.aboutus}>Nosotros</Link>
-          <Link to={router.tech}>Técnicos</Link>
+         
           {window.localStorage.getItem("token") ? (
             <Button onClick={HandleLogout}>Cerrar Sesión</Button>
           ) : (

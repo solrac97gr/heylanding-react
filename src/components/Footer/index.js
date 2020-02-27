@@ -19,19 +19,19 @@ export const Footter = () => {
         <div>
           <FotterTitle>Síguenos</FotterTitle>
           <SocialContainer>
-            <a href="https://www.facebook.com/heysolvepe">
+            <a href="https://www.facebook.com/yendoPE/">
               <IconSocial
                 src="https://manzanaverde.la/icons/facebook-color.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.linkedin.com/company/64602455">
+            <a href="https://www.linkedin.com/company/64602455/">
               <IconSocial
                 src="https://manzanaverde.la/icons/linkedin.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.instagram.com/heysolvepe/">
+            <a href="https://www.instagram.com/yendo.pe/">
               <IconSocial
                 src="https://manzanaverde.la/icons/instagram.svg"
                 alt=""
@@ -43,7 +43,6 @@ export const Footter = () => {
           <FotterTitle>Enlaces</FotterTitle>
           <SitemapItem to={routes.home}>Inicio</SitemapItem>
           <SitemapItem to={routes.aboutus}>Nosotros</SitemapItem>
-          <SitemapItem to={routes.tech}>Técnicos</SitemapItem>
           <SitemapItem to={routes.singin}>Iniciar sesión</SitemapItem>
           <SitemapItem to={routes.singup}>Registrarse</SitemapItem>
         </SitemapContainer>
@@ -56,14 +55,14 @@ export const Footter = () => {
             </a>
           </IconLinkFooter>
           <IconLinkFooter>
-            <a href="mailto:info@heysolve.com">
-              <span>info@heysolve.com</span>
+            <a href="mailto:info@yendo.pe">
+              <span>info@yendo.pe</span>
             </a>
           </IconLinkFooter>
         </ContactFooter>
       </FooterContainer>
       <FooterDerechos>
-        <span>HeySolve 2020 - Todos los derechos reservados ©</span>
+        <span>Yendo! 2020 - Todos los derechos reservados ©</span>
       </FooterDerechos>
     </div>
   );

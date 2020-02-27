@@ -53,3 +53,12 @@ export const CreateUser = functions.https.onRequest(
     });
   }
 );
+
+
+export const GetOnlyTechnicians = functions.https.onRequest(
+  async (request,response) =>{
+    await cors(request,response,async()=>{
+      response.send(JSON.stringify("Get with filter"))
+    })
+  }
+)

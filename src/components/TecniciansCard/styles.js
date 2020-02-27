@@ -12,9 +12,9 @@ color:white;
 }
 `
 export const TecniciansCardHeader = styled.div`
-background: #FDC830;  
-background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
-background: linear-gradient(to right, #F37335, #FDC830); 
+background: #8521B0;  
+background: -webkit-linear-gradient(to right, #7b1fa2, #8521B0); 
+background: linear-gradient(to right, #7b1fa2, #8521B0); 
 padding:40px 10px;
 border-radius:6px 6px 18px 0px;
 margin-bottom:15px;
@@ -34,7 +34,7 @@ padding:3px 10px;
 font-weight:600;
 color:#C4C4C4;
 ${props => props.primary && css`
-    color: #B35B03;
+    color: #7b1fa2;
   `}
 `
 export const ColumnText = styled.div`
@@ -44,4 +44,25 @@ flex-direction:column;
 export const Link = styled.a`
 text-decoration:none;
 color:inherit;
+`
+export const SkillBadged = styled.span`
+padding:3px;
+margin-right:3px;
+border-radius:6px;
+background-color:white;
+color:black;
+box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+font-size:8px;
+@media (max-width: 500px) {
+  font-size:13px;
+}
+`
+export const SkillsContainer = styled.div`
+display:flex;
+flex-direction:row;
+margin-top:5px;
+margin-bottom:5px;
+`
+export const TecnicName = styled.span`
+font-weight:600;
 `

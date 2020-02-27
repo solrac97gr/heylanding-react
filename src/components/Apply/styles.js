@@ -42,21 +42,21 @@ export const Centered = styled.div`
 export const ButtonCTA = styled(LinkRouter)`
   color: white;
   text-decoration: none;
-  background-color: #fe8307;
+  background-color: #7b1fa2;
   padding: 20px;
   border-radius: 25px 0px 25px 0px;
   margin: 0px 5px;
   box-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.2);
   font-weight: 500;
   &:hover {
-    background-color: #b35b03;
+    background-color: #681A8A;
   }
   @media (max-width: 500px) {
    width:100%;
   }
 `;
 export const ApplyTitle = styled.h2`
-  color: #fe8307;
+  color: #7b1fa2;
   margin: 10px;
   font-size:2em;
 `;
