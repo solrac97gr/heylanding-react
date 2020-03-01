@@ -17,9 +17,9 @@ export const Apply = () => {
       <BenefitContainer>
         <ApplyTitle>¿Quieres ser uno de nuestros especialistas?</ApplyTitle>
         <ApplyContent>
-          Yendo! siempre se encuentra en busca buscando a técnicos que sean
+          Yendo! siempre se encuentra en  búsqueda a técnicos que sean
           expertos en su oficio y brinden un excelente servicio a sus clientes.
-          Los mejores expertos del servicio a domicilio utilizan Yendo para
+          Los mejores profesionales del servicio a domicilio utilizan Yendo! para
           obtener una buena paga y una programación flexible.
         </ApplyContent>
         <Benefit>Presencia digital.</Benefit>

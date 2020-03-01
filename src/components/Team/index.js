@@ -21,7 +21,7 @@ export const Team = () => {
             src="https://media-exp1.licdn.com/dms/image/C4E03AQHEOAJ0R3ukyQ/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=bhZk4bQ30JYqbAoK1n3SQqEYehA35ve43MEBbnG-snE"
             alt=""
           />
-          <TeamCardTitle>Carlos Alberto García rosales</TeamCardTitle>
+          <TeamCardTitle>Carlos Alberto García Rosales</TeamCardTitle>
           <TeamCardCharge>Chief Technology Officer</TeamCardCharge>
           <SocialContainer>
             <a href="https://www.facebook.com/Carlos97gr/">
@@ -49,22 +49,22 @@ export const Team = () => {
             src="https://scontent.flim2-1.fna.fbcdn.net/v/t1.0-9/54356018_2038513879782842_6617078696438136832_o.jpg?_nc_cat=101&_nc_ohc=yNqNDsCQEhMAX_QLPJD&_nc_ht=scontent.flim2-1.fna&oh=72e12623dc84665e82c75ca4a831212e&oe=5EDA68D4"
             alt=""
           />
-          <TeamCardTitle>Cesar Alfredo Muñoz Valderrama</TeamCardTitle>
+          <TeamCardTitle>César Alfredo Muñoz Valderrama</TeamCardTitle>
           <TeamCardCharge>Chief Marketing Officer</TeamCardCharge>
           <SocialContainer>
-            <a href="https://www.facebook.com/heysolvepe">
+            <a href="https://www.facebook.com/profile.php?id=100008727498663">
               <IconSocial
                 src="https://manzanaverde.la/icons/facebook-color.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.linkedin.com/company/64602455">
+            <a href="https://www.linkedin.com/in/césar-alfredo-muñoz-valderrama-109800154/">
               <IconSocial
                 src="https://manzanaverde.la/icons/linkedin.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.instagram.com/heysolvepe/">
+            <a href="https://www.instagram.com/caesar.a_mv/">
               <IconSocial
                 src="https://manzanaverde.la/icons/instagram.svg"
                 alt=""
@@ -77,8 +77,8 @@ export const Team = () => {
             src="https://media-exp1.licdn.com/dms/image/C4E03AQHWSPjwNEne_w/profile-displayphoto-shrink_800_800/0?e=1586390400&v=beta&t=FwdKlyMiyLjvl9oG_0foj722cUa7VggnGtphK58T2Z4"
             alt=""
           />
-          <TeamCardTitle>Josue Miguel Machare Valle</TeamCardTitle>
-          <TeamCardCharge>Chief Excecutive Officer</TeamCardCharge>
+          <TeamCardTitle>Josué Miguel Macharé Valle</TeamCardTitle>
+          <TeamCardCharge>Chief Executive Officer</TeamCardCharge>
           <SocialContainer>
             <a href="https://www.facebook.com/jmacharevalle">
               <IconSocial
@@ -134,21 +134,21 @@ export const Team = () => {
             alt=""
           />
           <TeamCardTitle>Heidi Francesska Europa Camus Puente</TeamCardTitle>
-          <TeamCardCharge>Chief Comunication Officer</TeamCardCharge>
+          <TeamCardCharge>Chief Communication Officer</TeamCardCharge>
           <SocialContainer>
-            <a href="https://www.facebook.com/heysolvepe">
+            <a href="https://www.facebook.com/heidifrancesskaeuropa.camuspuente">
               <IconSocial
                 src="https://manzanaverde.la/icons/facebook-color.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.linkedin.com/company/64602455">
+            <a href="https://www.linkedin.com/in/heidi-camus-90688616a/">
               <IconSocial
                 src="https://manzanaverde.la/icons/linkedin.svg"
                 alt=""
               />
             </a>
-            <a href="https://www.instagram.com/heysolvepe/">
+            <a href="https://www.instagram.com/heidi_camus/">
               <IconSocial
                 src="https://manzanaverde.la/icons/instagram.svg"
                 alt=""

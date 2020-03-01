@@ -47,7 +47,7 @@ export const Footter = () => {
           <SitemapItem to={routes.singup}>Registrarse</SitemapItem>
         </SitemapContainer>
         <ContactFooter>
-          <FotterTitle>Contactanos</FotterTitle>
+          <FotterTitle>Contáctanos</FotterTitle>
           <div>Lima-Perú</div>
           <IconLinkFooter>
             <a href="tel:+51939169253">

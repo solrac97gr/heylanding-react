@@ -24,7 +24,7 @@ export const AboutUs = () => {
         </Objetive>
         <Objetive>
           Visión: Ser la plataforma líder en el mercado en proveer servicios de
-          reparación y mantenimiento en el hogar.
+          reparación y mantenimiento del hogar.
         </Objetive>
       </ObjetiveContainer>
     </AboutUSContainer>

@@ -88,7 +88,7 @@ export const RegisterForm = () => {
         "loading..."
       ) : (
         <Form onSubmit={HandleSubmit}>
-          <FormTitle>Registarme</FormTitle>
+          <FormTitle>Registrarme</FormTitle>
           <InputGuide>Ingresa tu email</InputGuide>
           <Input
             type="email"
