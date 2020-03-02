@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 export const SitemapItem = styled(Link)`
   color: black;
   text-decoration: none;
-  margin-top: 0.8em;
+  margin-top: 0.5em;
 `;
 export const FooterContainer = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
   padding: 10% 10% 10% 10%;
   text-align: left;
   background-color: white;
-  color: #7b1fa2;
+  
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
@@ -24,6 +24,7 @@ export const FooterContainer = styled.div`
 export const FotterTitle = styled.span`
   font-size: 1.5em;
   font-weight: 600;
+  color:#7b1fa2;
   @media (min-width: 600px) {
     font-size: 1em;
     font-weight: bold;
@@ -34,6 +35,7 @@ export const SocialContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 8px;
+  margin-bottom:12px;
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
@@ -48,9 +50,12 @@ export const SitemapContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 8px;
+  margin-bottom:12px;
 `;
 export const ContactFooter = styled.div`
   margin-top: 8px;
+  display:flex;
+  flex-direction:column;
 `;
 export const FooterDerechos = styled.div`
     border-top: 1px solid gainsboro;
@@ -64,6 +69,9 @@ export const FooterDerechos = styled.div`
   }
 `
 export const IconLinkFooter = styled.div`
-margin-top: 13px;
+margin-top: 0.5em;
 
+`
+export const TextLocation = styled.span`
+margin-top:0.5em;
 `

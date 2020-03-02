@@ -45,7 +45,6 @@ font-size:2em;
 margin-bottom:20px;
 `
 export const Description = styled.span`
-font-size:21px;
 `
 export const ButtonCTA  = styled.a`
 color:white;
@@ -70,7 +69,7 @@ font-weight:500;
 export const StageContainer = styled.ul`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   text-align: left;
   @media (max-width: 500px) {
   width:100%;

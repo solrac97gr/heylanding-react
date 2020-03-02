@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkRouter } from "@reach/router";
 
 export const ApplyContainer = styled.div`
   display: flex;
@@ -39,7 +38,7 @@ export const Centered = styled.div`
   width:100%;
 }
 `;
-export const ButtonCTA = styled(LinkRouter)`
+export const ButtonCTA = styled.a`
   color: white;
   text-decoration: none;
   background-color: #7b1fa2;

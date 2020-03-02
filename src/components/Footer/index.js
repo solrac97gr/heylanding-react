@@ -8,7 +8,8 @@ import {
   SitemapContainer,
   ContactFooter,
   FooterDerechos,
-  IconLinkFooter
+  IconLinkFooter,
+  TextLocation
 } from "./styles";
 import routes from "../../router/index";
 
@@ -48,7 +49,7 @@ export const Footter = () => {
         </SitemapContainer>
         <ContactFooter>
           <FotterTitle>Contáctanos</FotterTitle>
-          <div>Lima-Perú</div>
+          <TextLocation>Lima - Perú</TextLocation>
           <IconLinkFooter>
             <a href="tel:+51939169253">
               <span>+51 939 169 253</span>

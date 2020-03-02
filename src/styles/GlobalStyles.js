@@ -14,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     overscroll-behavior: none;
    
   }
+  a{
+    text-decoration:none;
+    color:black;
+  }
   textarea:focus, input:focus{
     outline: none;
 }
