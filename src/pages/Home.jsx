@@ -17,7 +17,7 @@ export const Home = () => {
           name="description"
           content="Técnicos a domicilio en lima para todos los rubros."
         />
-        <link rel="canonical" href="https://yendo.pe" />
+        <link rel="canonical" href="https://estamosyendo.com" />
       
       </Helmet>
       <NavBar/>

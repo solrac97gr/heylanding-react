@@ -3,23 +3,30 @@ import { scaleU } from "../../styles/animation";
 import config from "../../config";
 /*import heroimg from "../../static/images/yendo.jpeg";*/
 
+const neon3 = keyframes`
+from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #fff, 0 0 20px #591c63, 0 0 35px #591c63, 0 0 40px #591c63, 0 0 50px #591c63, 0 0 75px #591c63;
+  }
+  to {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #591c63, 0 0 17.5px #591c63, 0 0 20px #591c63, 0 0 25px #591c63, 0 0 37.5px #591c63;
+  }
+
+`;
+
 export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background: #0f0c29; /* fallback for old browsers */
+  background: #6441a5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
-    #24243e,
-    #302b63,
-    #0f0c29
+    #2a0845,
+    #6441a5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #24243e,
-    #302b63,
-    #0f0c29
+    #2a0845,
+    #6441a5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
 
   padding: 10% 18%;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
@@ -28,14 +35,14 @@ export const HeroContainer = styled.div`
   @media (max-width: 500px) {
     padding-top: 35%;
     padding-bottom: 20%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 `;
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.2em;
+
   width: 50%;
   text-align: left;
   vertical-align: middle;
@@ -66,35 +73,24 @@ export const SeoTitle = styled.h1`
   }
 `;
 
-const neon3 = keyframes`
-
-from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #fff, 0 0 20px #591c63, 0 0 35px #591c63, 0 0 40px #591c63, 0 0 50px #591c63, 0 0 75px #591c63;
-  }
-  to {
-    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #591c63, 0 0 17.5px #591c63, 0 0 20px #591c63, 0 0 25px #591c63, 0 0 37.5px #591c63;
-  }
-
-`
 export const MktTitle = styled.span`
-  color: #591c63;
+  color: white;
   font-family: "Pacifico";
   font-weight: 300;
   margin: 5px 0px;
   font-size: 4rem;
   text-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.2);
- 
+  &:hover {
+    color: #591c63;
     -webkit-animation: ${neon3} 1.5s ease-in-out infinite alternate;
     -moz-animation: ${neon3} 1.5s ease-in-out infinite alternate;
     animation: ${neon3} 1.5s ease-in-out infinite alternate;
-  
-  
+  }
+
   @media (max-width: 500px) {
     font-size: 3rem;
-   
   }
 `;
-
 
 export const ButtonCTA = styled.a`
   color: ${config.hard};
@@ -117,7 +113,8 @@ export const ButtonCTA = styled.a`
   }
 `;
 export const Img = styled.img`
-  width: 250px;
+  width: 80%;
+
   @media (max-width: 500px) {
     display: none;
   }
