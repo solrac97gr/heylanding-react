@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { scaleU } from "../../styles/animation";
 import config from "../../config";
-import heroimg from "../../static/images/yendo.jpeg";
+/*import heroimg from "../../static/images/yendo.jpeg";*/
 
 export const HeroContainer = styled.div`
   display: flex;
