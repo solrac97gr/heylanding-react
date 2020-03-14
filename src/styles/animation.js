@@ -69,3 +69,13 @@ export const skeletonAnimation = ({
     );
     position: relative;
   `
+
+export const neon3 = keyframes`
+from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #fff, 0 0 20px #591c63, 0 0 35px #591c63, 0 0 40px #591c63, 0 0 50px #591c63, 0 0 75px #591c63;
+  }
+  to {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #591c63, 0 0 17.5px #591c63, 0 0 20px #591c63, 0 0 25px #591c63, 0 0 37.5px #591c63;
+  }
+
+`;

@@ -1,17 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { scaleU } from "../../styles/animation";
 import config from "../../config";
 /*import heroimg from "../../static/images/yendo.jpeg";*/
 
-const neon3 = keyframes`
-from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #fff, 0 0 20px #591c63, 0 0 35px #591c63, 0 0 40px #591c63, 0 0 50px #591c63, 0 0 75px #591c63;
-  }
-  to {
-    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #591c63, 0 0 17.5px #591c63, 0 0 20px #591c63, 0 0 25px #591c63, 0 0 37.5px #591c63;
-  }
-
-`;
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -80,12 +71,6 @@ export const MktTitle = styled.span`
   margin: 5px 0px;
   font-size: 4rem;
   text-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.2);
-  &:hover {
-    color: #591c63;
-    -webkit-animation: ${neon3} 1.5s ease-in-out infinite alternate;
-    -moz-animation: ${neon3} 1.5s ease-in-out infinite alternate;
-    animation: ${neon3} 1.5s ease-in-out infinite alternate;
-  }
 
   @media (max-width: 500px) {
     font-size: 3rem;
