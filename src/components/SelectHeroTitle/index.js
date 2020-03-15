@@ -1,10 +1,10 @@
 import React from 'react'
 import {SelectHeroStyle,SelectTitleService} from './styles'
 
-export const SelectHeroTitle = () => {
+export const SelectHeroTitle = ({title}) => {
     return (
         <SelectHeroStyle>
-            <SelectTitleService>¿Seleccionar servicio?</SelectTitleService>
+            <SelectTitleService>{title}</SelectTitleService>
         </SelectHeroStyle>
     )
 }

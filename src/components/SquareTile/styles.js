@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const SquareTileStyle = styled.div`
   display:flex;
   flex-direction:column;
@@ -13,7 +14,7 @@ export const SquareTileStyle = styled.div`
 
 export const SquareText = styled.div`
 font-size:1.3em;
-font-weight:500;
+font-weight:600;
 color:#7b1fa2;
 margin-top:10px;
 `

@@ -4,6 +4,8 @@ export const SelectHeroStyle = styled.div`
   display: flex;
   flex-direction: row;
   background: #6441a5; /* fallback for old browsers */
+  position:fixed;
+  width:100%;
   background: -webkit-linear-gradient(
     to left,
     #2a0845,

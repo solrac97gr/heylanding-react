@@ -7,5 +7,5 @@ export const ListTilesContainer = styled.div`
     flex: 3 3 180px 180px;
   }
   justify-content: center;
-  padding:5% 18%;
+  padding:25% 18% 3% 18%;
 `;
