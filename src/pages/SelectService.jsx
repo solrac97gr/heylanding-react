@@ -6,7 +6,7 @@ import {ServiceList} from '../components/ServiceList'
 export const SelectService = () => {
   return (
     <>
-      <SelectHeroTitle title={"Elige el servicio"}/>
+      <SelectHeroTitle title={"Elige el servicio"} fix/>
       <ServiceList/>
     </>
   );

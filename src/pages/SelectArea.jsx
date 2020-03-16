@@ -5,7 +5,7 @@ import { ListTiles } from "../components/ListTiles";
 export const SelectArea = () => {
   return (
     <>
-       <SelectHeroTitle title={"¿En qué área se encuentra el problema?"}/>
+       <SelectHeroTitle title={"¿En qué área se encuentra el problema?"} fix/>
       <ListTiles></ListTiles>
     </>
   );

@@ -10,6 +10,8 @@ export const SquareTileStyle = styled.div`
   padding:50px;
   border-radius:10px;
   margin:10px 10px;
+  cursor:hand;
+  cursor:pointer;
 `;
 
 export const SquareText = styled.div`

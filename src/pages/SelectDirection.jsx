@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { SelectHeroTitle } from "../components/SelectHeroTitle";
+import {FormDirection} from '../components/FormDirection'
 
 export const SelectDirection = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <>
+      <SelectHeroTitle title={"¿Dónde se realizara el trabajo?"} />
+      <FormDirection/>
+    </>
+  );
+};
