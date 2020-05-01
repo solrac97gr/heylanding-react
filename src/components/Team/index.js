@@ -18,7 +18,7 @@ export const Team = () => {
       <TeamCardContainer>
         <TeamCard>
           <TeamCardImage
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQHEOAJ0R3ukyQ/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=bhZk4bQ30JYqbAoK1n3SQqEYehA35ve43MEBbnG-snE"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQHEOAJ0R3ukyQ/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=Mz3kJN99WCR-1v7eMbe9qKpnPLPJJqU9y3MOAcXM2OE"
             alt=""
           />
           <TeamCardTitle>Carlos Alberto García Rosales</TeamCardTitle>
@@ -46,8 +46,8 @@ export const Team = () => {
         </TeamCard>
         <TeamCard>
           <TeamCardImage
-            src="https://scontent.flim2-1.fna.fbcdn.net/v/t1.0-9/54356018_2038513879782842_6617078696438136832_o.jpg?_nc_cat=101&_nc_ohc=yNqNDsCQEhMAX_QLPJD&_nc_ht=scontent.flim2-1.fna&oh=72e12623dc84665e82c75ca4a831212e&oe=5EDA68D4"
-            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C5603AQEdk8_qtaZ3OQ/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=4C-HXRevElZY8JbJPHKrh9VLwaz_RlGw7UTcrvptVn0"
+            alt="César Alfredo Muñoz Valderrama"
           />
           <TeamCardTitle>César Alfredo Muñoz Valderrama</TeamCardTitle>
           <TeamCardCharge>Chief Marketing Officer</TeamCardCharge>
@@ -74,8 +74,8 @@ export const Team = () => {
         </TeamCard>{" "}
         <TeamCard>
           <TeamCardImage
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQHWSPjwNEne_w/profile-displayphoto-shrink_800_800/0?e=1586390400&v=beta&t=FwdKlyMiyLjvl9oG_0foj722cUa7VggnGtphK58T2Z4"
-            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGIALWGujZvLQ/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=-JzDZXjSWJ9aE_Fa34q_wn8DnBngVgZfaeOQEP7bMXY"
+            alt="Josué Miguel Macharé Valle"
           />
           <TeamCardTitle>Josué Miguel Macharé Valle</TeamCardTitle>
           <TeamCardCharge>Chief Executive Officer</TeamCardCharge>
@@ -102,8 +102,8 @@ export const Team = () => {
         </TeamCard>
         <TeamCard>
           <TeamCardImage
-            src="https://scontent.flim2-1.fna.fbcdn.net/v/t31.0-8/21587239_1471314762963530_934452769389889544_o.jpg?_nc_cat=103&_nc_ohc=CJsdlCs7ZIkAX9r2W1l&_nc_ht=scontent.flim2-1.fna&oh=0c25ecfa125cb0e74a6a0157fd6deea2&oe=5E90C393"
-            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQHWnwAm-NwEVg/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=NMcFfYGmReUF_dXbvQfY5pnQTsyGg48OMVAT81srbes"
+            alt="Rodrigo Fernando Aliaga Gutierrez"
           />
           <TeamCardTitle>Rodrigo Fernando Aliaga Gutierrez</TeamCardTitle>
           <TeamCardCharge>Chief Operating Officer</TeamCardCharge>
@@ -130,8 +130,8 @@ export const Team = () => {
         </TeamCard>
         <TeamCard>
           <TeamCardImage
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQHDHLtH1NymtA/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=oo506bD13tmNYDnOlGVBwF3hGOJoD8nZn1TNb7yUjtM"
-            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQHDHLtH1NymtA/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=WHFuD4eVCOKtIX0UOfJM71FSZGMPCvnF6LqBj6-1U7w"
+            alt="Heidi Francesska Europa Camus Puente"
           />
           <TeamCardTitle>Heidi Francesska Europa Camus Puente</TeamCardTitle>
           <TeamCardCharge>Chief Communication Officer</TeamCardCharge>

@@ -44,7 +44,6 @@ export const Footter = () => {
           <FotterTitle>Enlaces</FotterTitle>
           <SitemapItem to={routes.home}>Inicio</SitemapItem>
           <SitemapItem to={routes.aboutus}>Nosotros</SitemapItem>
-          <SitemapItem to={routes.singin}>Iniciar sesión</SitemapItem>
           <SitemapItem to={routes.singup}>Registrarse</SitemapItem>
         </SitemapContainer>
         <ContactFooter>

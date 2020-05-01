@@ -4,6 +4,7 @@ import { SquareTile } from "../SquareTile";
 import { FaHammer, FaKey, FaPaintRoller } from "react-icons/fa";
 import { GiTap, GiElectric, GiElectricalResistance } from "react-icons/gi";
 
+
 const size = 35;
 const color = "#7b1fa2";
 
@@ -39,6 +40,7 @@ const data = [
     icon: <GiElectricalResistance size={size} color={color} />
   }
 ];
+
 
 export const ListTiles = () => {
   return (

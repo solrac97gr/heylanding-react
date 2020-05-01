@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { SelectHeroTitle } from "../components/SelectHeroTitle";
+import { ListPay } from "../components/ListPay";
 
 export const SelectPaymentMethod = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <>
+      <SelectHeroTitle title={"¿Cómo deseas pagar?"} fix />
+      <ListPay></ListPay>
+    </>
+  );
+};

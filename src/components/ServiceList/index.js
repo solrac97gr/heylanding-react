@@ -42,7 +42,6 @@ const services = [
 ];
 
 export const ServiceList = () => {
-  
   return (
     <ServiceListContainer>
       {services.map((service) => {
